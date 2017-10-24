@@ -1,0 +1,35 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "MongoDB": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "mongodb://127.0.0.1:27017/lbng",
+    "database": "lbng",
+    "password": "",
+    "name": "MongoDB",
+    "user": "",
+    "connector": "mongodb"
+  },
+  "mailer": {
+    "name": "mailer",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "mobarra14@gmail.com",
+          "pass": "masterboot"
+        }
+      }
+    ],
+    "connector": "mail"
+  }
+}
