@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "start": "node .",
     "posttest": "npm run lint && nsp check",
-    "build:sdk": "./node_modules/.bin/lb-sdk server/server.js client/src/app/shared/sdk -l angular2 -d ng2web -i disabled"
+    "build:sdk": "./node_modules/.bin/lb-sdk server/server.js ../front/src/app/shared/sdk -l angular2 -d ng2web -i disabled"
   },
   "dependencies": {
     "compression": "^1.0.3",

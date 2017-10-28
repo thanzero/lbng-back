@@ -15,6 +15,7 @@
   },
   "User": {
     "dataSource": "MongoDB",
+    "public": false,
     "options": {
       "emailVerificationRequired": true
     }
@@ -29,20 +30,18 @@
   },
   "RoleMapping": {
     "dataSource": "MongoDB",
-    "public": false,
+    "public": true,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
     "dataSource": "MongoDB",
-    "public": false
-  },
-  "Message": {
-    "dataSource": null
+    "public": true
   },
   "Email": {
-    "dataSource": "mailer"
+    "dataSource": "mailer",
+    "public": false
   },
   "Account": {
     "dataSource": "MongoDB",
