@@ -16,7 +16,8 @@ module.exports = function (app) {
                 name: 'Admin',
                 email: 'admin@example.com',
                 username: 'admin',
-                password: '123'
+                password: '123',
+                emailVerified: true
             }, function (err, admin) {
                 if (err) throw err;
 
