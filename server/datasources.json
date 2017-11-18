@@ -31,5 +31,11 @@
       }
     ],
     "connector": "mail"
+  },
+  "files": {
+    "name": "files",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./client/storage"
   }
 }
