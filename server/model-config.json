@@ -46,5 +46,13 @@
   "Account": {
     "dataSource": "MongoDB",
     "public": true
+  },
+  "Article": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "container": {
+    "dataSource": "files",
+    "public": true
   }
 }
