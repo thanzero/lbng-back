@@ -12,12 +12,24 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "roles": {
+      "type": "hasMany",
+      "model": "Role",
+      "foreignKey": "principalId",
+      "through": "RoleMapping"
+    },
+    "articles": {
+      "type": "hasMany",
+      "model": "Article",
+      "foreignKey": "ownerId"
+    }
+  },
   "acls": [
     {
       "accessType": "*",
       "principalType": "ROLE",
-      "principalId": "admin",
+      "principalId": "Admin",
       "permission": "ALLOW"
     }
   ],
