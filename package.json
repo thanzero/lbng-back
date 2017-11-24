@@ -11,7 +11,8 @@
     "posttest": "npm run lint && nsp check",
     "sdk:clean": "rm -rf ../front/src/app/shared/sdk",
     "sdk:generate-only": "node_modules/.bin/lb-sdk server/server.js ../front/src/app/shared/sdk -l angular2 -d ng2web -i disabled",
-    "sdk:build": "npm run-script sdk:clean && npm run-script sdk:generate-only"
+    "sdk:build": "npm run-script sdk:clean && npm run-script sdk:generate-only",
+    "postinstall": "node scripts/storage.js"
   },
   "dependencies": {
     "compression": "^1.0.3",
