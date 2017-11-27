@@ -54,5 +54,13 @@
   "container": {
     "dataSource": "files",
     "public": true
+  },
+  "Tag": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "TagLink": {
+    "dataSource": "MongoDB",
+    "public": false
   }
 }

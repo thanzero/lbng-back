@@ -1,0 +1,27 @@
+{
+  "name": "Tag",
+  "plural": "tags",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "articles": {
+      "type": "hasMany",
+      "model": "Article",
+      "through": "TagLink",
+      "invert": true,
+      "polymorphic": "taggable"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

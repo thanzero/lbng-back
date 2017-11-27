@@ -1,0 +1,23 @@
+{
+  "name": "TagLink",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "tag": {
+      "type": "belongsTo",
+      "model": "Tag",
+      "foreignKey": ""
+    },
+    "taggable": {
+      "type": "belongsTo",
+      "polymorphic": true
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
