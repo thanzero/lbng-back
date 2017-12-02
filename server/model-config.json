@@ -62,5 +62,9 @@
   "TagLink": {
     "dataSource": "MongoDB",
     "public": false
+  },
+  "Page": {
+    "dataSource": "MongoDB",
+    "public": true
   }
 }
