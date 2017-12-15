@@ -11,6 +11,9 @@
       "type": "string",
       "required": true
     },
+    "description": {
+      "type": "string"
+    },
     "content": {
       "type": "string"
     },
@@ -19,7 +22,19 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "owner": {
+      "type": "belongsTo",
+      "model": "Account",
+      "foreignKey": "ownerId"
+    },
+    "tags": {
+      "type": "hasMany",
+      "model": "Tag",
+      "through": "TagLink",
+      "polymorphic": "taggable"
+    }
+  },
   "acls": [],
   "methods": {}
 }
