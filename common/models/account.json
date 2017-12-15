@@ -23,6 +23,11 @@
       "type": "hasMany",
       "model": "Article",
       "foreignKey": "ownerId"
+    },
+    "pages": {
+      "type": "hasMany",
+      "model": "Page",
+      "foreignKey": "ownerId"
     }
   },
   "acls": [

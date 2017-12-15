@@ -9,7 +9,7 @@ module.exports = function (app) {
         }
         // console.log('found account(s)', accounts);
         if (accounts && accounts.length) {
-            console.info('admin account already exist')
+            // console.info('admin account already exist')
         } else {
             console.info('creating admin account');
             Account.create({

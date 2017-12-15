@@ -12,10 +12,6 @@
     },
     "text": {
       "type": "string"
-    },
-    "ownerId": {
-      "type": "string",
-      "required": true
     }
   },
   "validations": [],
@@ -24,6 +20,12 @@
       "type": "belongsTo",
       "model": "Account",
       "foreignKey": "ownerId"
+    },
+    "tags": {
+      "type": "hasMany",
+      "model": "Tag",
+      "through": "TagLink",
+      "polymorphic": "taggable"
     }
   },
   "acls": [
@@ -52,5 +54,8 @@
       "permission": "ALLOW"
     }
   ],
-  "methods": {}
+  "methods": {},
+  "mixins": {
+    "Timestamp": {}
+  }
 }
