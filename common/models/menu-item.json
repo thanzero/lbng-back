@@ -26,7 +26,12 @@
     "parent": {
       "type": "belongsTo",
       "model": "MenuItem",
-      "foreignKey": ""
+      "foreignKey": "parentId"
+    },
+    "children": {
+      "type": "hasMany",
+      "model": "MenuItem",
+      "foreignKey": "parentId"
     }
   },
   "acls": [],
