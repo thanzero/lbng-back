@@ -1,0 +1,34 @@
+{
+  "name": "MenuItem",
+  "plural": "menu-items",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "order": {
+      "type": "number",
+      "required": true,
+      "default": 1
+    }
+  },
+  "validations": [],
+  "relations": {
+    "parent": {
+      "type": "belongsTo",
+      "model": "MenuItem",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
