@@ -1,0 +1,38 @@
+{
+  "name": "MenuItem",
+  "plural": "menu-items",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "order": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "validations": [],
+  "relations": {
+    "parent": {
+      "type": "belongsTo",
+      "model": "MenuItem",
+      "foreignKey": "parentId"
+    },
+    "children": {
+      "type": "hasMany",
+      "model": "MenuItem",
+      "foreignKey": "parentId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

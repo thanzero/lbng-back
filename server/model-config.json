@@ -66,5 +66,9 @@
   "Page": {
     "dataSource": "MongoDB",
     "public": true
+  },
+  "MenuItem": {
+    "dataSource": "MongoDB",
+    "public": true
   }
 }
