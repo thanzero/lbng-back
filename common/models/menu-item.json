@@ -17,7 +17,6 @@
     },
     "order": {
       "type": "number",
-      "required": true,
       "default": 1
     }
   },
